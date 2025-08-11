@@ -9,7 +9,9 @@ void showCalc(std::string text); // have to declare this function before the mai
 
 int main(){
 	int a = 5; // defining two local variables: a & b. only used within the main()
-	int b = 2;
+	int b = 2; // 
+	char letterG = 'G';
+	bool lightSwitch = false; // create a boolean with variable name "lightSwitch", a data type with two values "true" or "false";
 	
 	cout << "------" << '\n'; // we will output a series of "---" into the terminal, then we will make a new line using '\n'
 	
@@ -28,7 +30,11 @@ int main(){
 	c = divide(a,b); // from pt1_1.cpp: we will be using the implementation of the function there.
 	showCalc("quotient"); // we will pass a string with the value of "quotient"
 	
-	cout << "------" << '\n';
+	cout << "------" << '\n'; // we will output a series of "---" into the terminal, then we will make a new line using '\n'
+	if(!lightSwitch) // IF LIGHT SWITCH IS FALSE PERFORM THE LINES OF CODE BELOW.
+	{
+		cout << "Light switch is off, therefore I'll output the letter " << letterG << '\n'; // IF LIGHT SWITCH IS FALSE, output that  the light switch is off, then output the letter 'G' from letterG, then make a new line using '\n'
+	}
 	getch(); // we will require the user to type on the keyboard in order to exit the program.
 	
 	return 0; // indicates the end of the program, required as main() is an integer
