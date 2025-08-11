@@ -38,8 +38,8 @@ int main(){
 	{
 		cout << "Light switch is off, therefore I'll output the letter " << letterG << '\n'; // IF LIGHT SWITCH IS FALSE, output that  the light switch is off, then output the letter 'G' from letterG, then make a new line using '\n'
 	}
-	cout << "Manipulating the value of the letter 'G' to be in it's HEXADECIMAL form." << '\n'; // outputting a terminal log message, then creating a new line using '\n'.
-	cout << "Hexadecimal value of G: " << (int)'G'; // outputs 71, please refer to the ASCII table "https://www.ascii-code.com/", because we're converting a 'char' value to integer, we will convert it to it's hexadecimal value.
+	cout << "Manipulating the value of the letter 'G' to be in it's DECIMAL form." << '\n'; // outputting a terminal log message, then creating a new line using '\n'.
+	cout << "Decimal value of G: " << (int)'G'; // outputs 71, please refer to the ASCII table "https://www.ascii-code.com/", because we're converting a 'char' value to integer, we will convert it to it's decimal value.
 	getch(); // we will require the user to type on the keyboard in order to exit the program.
 	
 	return 0; // indicates the end of the program, required as main() is an integer
