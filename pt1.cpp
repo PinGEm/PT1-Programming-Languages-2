@@ -8,8 +8,8 @@ double c = 0; // define a global variable to be used freely in this entire file
 void showCalc(std::string text); // have to declare this function before the main(), otherwise main() cannot access it and will not recognize it as part of the scope. we also force ourselves to pass a string value to it.
 
 int main(){
-	int a = 5; // defining two local variables: a & b. only used within the main(), assigning the value 5 of 'a'.
-	int b = 2; // defining two local variables: a & b. only used within the main(), assigning the value 2 of 'b'.
+	int a = 5; // defining two local variables: a & b. only used within the main()
+	int b = 2;
 	
 	cout << "------" << '\n'; // we will output a series of "---" into the terminal, then we will make a new line using '\n'
 	
@@ -28,7 +28,7 @@ int main(){
 	c = divide(a,b); // from pt1_1.cpp: we will be using the implementation of the function there.
 	showCalc("quotient"); // we will pass a string with the value of "quotient"
 	
-	cout << "------" << '\n'; // we will output a series of "---" into the terminal, then we will make a new line using '\n'
+	cout << "------" << '\n';
 	getch(); // we will require the user to type on the keyboard in order to exit the program.
 	
 	return 0; // indicates the end of the program, required as main() is an integer
